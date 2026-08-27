@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding:0;
+}
+
+.header {
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@keyframes moveUp {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -1000px; 
+    }
+}
+
+
+#nailongImage {
+  width: 350px;       
+  height: 350px;      
+  object-fit: cover;  
+  border-radius: 15px;
+  
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("img/Gambar\ WhatsApp\ 2025-08-29\ pukul\ 22.25.06_f29f2aa3.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none !important;
+}
+
+.nav-disabled {
+  background-color: #b45309 !important; 
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.nav-enabled {
+  background-color: #f97316 !important;
+}
+
+.shop-popup {
+  animation: scaleIn 0.35s cubic-bezier(.6,.1,.2,1.1);
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+@media (max-width: 768px) {
+  .store-link span {
+    opacity: 1 !important;
+    transform: none !important;
+    margin-left: 8px;
+  }
+  .shop-popup h2 {
+    font-size: 2xl;
+  }
+}
+
+.active-menu {
+  color: #b45309;
+}
+
+.footer {
+  background: #111;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: yellow;
+}

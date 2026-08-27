@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch Nailong</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+<header class="header bg-white shadow-md fixed top-0 left-0 w-full z-30">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="logo text-2xl font-bold text-amber-900">NAILONG</h1>
+    <nav>
+      <ul class="flex gap-6 text-amber-900 font-semibold">
+        <li class="relative group">
+          <a href="nailong.html" class="transition-colors hover:text-amber-700">Home</a>
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="relative group">
+          <a href="nailong.html#about" class="transition-colors hover:text-amber-700">About</a>
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="relative group">
+          <a href="filmNailong.html" class="transition-colors hover:text-amber-700">Film</a>
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="relative group">
+          <a href="#" class="transition-colors hover:text-amber-700">Shop</a>
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+        </li>
+        <li class="relative group">
+          <a href="contact.html" class="transition-colors hover:text-amber-700">Contact</a>
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="max-w-7xl mx-auto py-8 px-6 grid md:grid-cols-3 gap-6">
+    <div class="md:col-span-2">
+      <div class="aspect-w-16 aspect-h-9 bg-black rounded-lg overflow-hidden">
+        <iframe id="mainPlayer"
+          src=""
+          class="w-full h-[500px]"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="mt-4">
+        <h2 id="episodeTitle" class="text-xl font-bold text-amber-900">Judul Episode</h2>
+      </div>
+    </div>
+
+    <aside>
+      <h3 class="font-semibold mb-4">Episode Lainnya</h3>
+      <div id="recommendList" class="space-y-4"></div>
+    </aside>
+  </section>
+
+<footer class="footer">
+    <p>&copy; 2025 Nailong. All Rights Reserved.</p>
+     <div class="social-icons">
+      <a href="https://www.tiktok.com/@nailoong_official"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.youtube.com/@Nailoongofficial"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/nailoong_official/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+<div id="shopOverlay" 
+     class="hidden fixed inset-0 bg-black/40 backdrop-blur-md flex justify-center items-center z-50">
+
+<div class="relative w-[450px] max-w-[90%] pb-20">
+
+    <img src="img/nailoong1.png" style="width: 270px; height: 270px;" class="mx-auto mb-[-50px] object-contain z-50">
+
+    <div class="relative bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-3xl p-6 shadow-2xl text-center shop-popup border-4 border-yellow-400">
+      <button id="closeShop" 
+              class="absolute top-3 right-3 bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg hover:bg-gray-100 transition">
+        ✕
+      </button>
+
+      <h2 class="text-3xl font-extrabold text-white drop-shadow-lg animate-bounce">✨ GO SHOP!! ✨</h2>
+      <p class="mt-3 text-white text-sm font-medium drop-shadow">
+        Jangan sampai ketinggalan! Borong sekarang merchandise & produk Nailong favoritmu!
+      </p>
+      <div class="relative mt-6 w-full max-w-[280px] mx-auto flex flex-col gap-4 items-center">
+
+        <!-- Nailong -->
+        <a href="https://nailong-dinosaur.com/" target="_blank"
+           class="store-link flex items-center justify-center bg-yellow-400 rounded-xl shadow-md 
+                  w-48 h-16 px-4 transition-all duration-300">
+          <div class="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+            <img src="img/Nailong-Dinosaur-Logo.png" class="w-8 h-8">
+          </div>
+          <span class="ml-3 text-black font-semibold text-sm">Nailong</span>
+        </a>
+
+        <!-- Shopee -->
+        <a href="https://shopee.co.id/search?keyword=nailong" target="_blank"
+           class="store-link flex items-center justify-center bg-[#ee4d2d] rounded-xl shadow-md 
+                  w-48 h-16 px-4 transition-all duration-300">
+          <div class="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+            <img src="img/pngwing.com (6).png" class="w-8 h-8">
+          </div>
+          <span class="ml-3 text-white font-semibold text-sm">Shopee</span>
+        </a>
+
+        <!-- Tokopedia -->
+        <a href="https://www.tokopedia.com/search?st=product&q=nailong" target="_blank"
+           class="store-link flex items-center justify-center bg-[#42b549] rounded-xl shadow-md 
+                  w-48 h-16 px-4 transition-all duration-300">
+          <div class="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+            <img src="img/pngwing.com (5).png" class="w-8 h-8">
+          </div>
+          <span class="ml-3 text-white font-semibold text-sm">Tokopedia</span>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  const shopLink = document.querySelector('nav ul li a[href="#"]'); 
+  const overlay = document.getElementById("shopOverlay");
+  const closeShop = document.getElementById("closeShop");
+
+  shopLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    overlay.classList.remove("hidden");
+  });
+
+  closeShop.addEventListener("click", () => overlay.classList.add("hidden"));
+  overlay.addEventListener("click", (e) => { if(e.target === overlay) overlay.classList.add("hidden"); });
+
+  const episodes = {
+    "VL9mo684zLY": { title: "The Beginning" },
+    "Di9MuAwgBVU": { title: "Funny Adventure" },
+    "rQYeQ9Lv150": { title: "New Journey" }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const videoId = params.get("id");
+
+  if (videoId && episodes[videoId]) {
+    document.getElementById("mainPlayer").src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    document.getElementById("episodeTitle").innerText = episodes[videoId].title;
+  }
+
+  const recommendList = document.getElementById("recommendList");
+  Object.entries(episodes).forEach(([id, data]) => {
+    if (id !== videoId) {
+      recommendList.innerHTML += `
+        <a href="watch-nailong.html?id=${id}" class="flex gap-3 hover:bg-gray-200 p-2 rounded-lg">
+          <img src="https://img.youtube.com/vi/${id}/mqdefault.jpg" class="w-32 rounded">
+          <div>
+            <p class="font-semibold">${data.title}</p>
+          </div>
+        </a>
+      `;
+    }
+  });
+
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll("nav ul li a").forEach(link => {
+    if(link.getAttribute("href") === currentPage){
+      link.classList.add("active-menu");
+      const underline = link.nextElementSibling;
+      if(underline) underline.style.width = "100%";
+    }
+  });
+</script>
+
+</body>
+</html>
